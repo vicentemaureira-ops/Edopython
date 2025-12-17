@@ -1,0 +1,8 @@
+#primero definimos la función
+def f(x): return 10*x**3-2*x**2+1-np.exp(2*x)
+
+bis = metodo_biseccion(a,b,f,t) #intervalo,intervalo,funcion,tolerancia
+
+def f(x): return x**4-2
+def df(x): return 4*x**3
+new = newton_raphson(x0,f,df,t) #punto cercano a la raiz,función,derivada función, tolerancia
