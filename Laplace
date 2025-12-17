@@ -1,0 +1,15 @@
+import sympy as sp
+sympy.init_printing()
+import matplotlib.pyplot as plt
+%matplotlib inline
+from sympy import integrate, init_printing #importamos paquete para integrar
+
+# definimos algunos objetos con los que queremos trabajar.
+t, s = sp.symbols('t, s') #símbolos
+a = sp.symbols('a', real=True, positive=True) #símbolo real positivo
+
+#definimos la función con la que queremos trabajar
+f = t**3
+
+trans = sp.laplace_transform(f, t, s, noconds=True)
+inver = sp.inverse_laplace_transform(F, s, t)
