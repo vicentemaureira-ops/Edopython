@@ -1,0 +1,13 @@
+########## GRAFICAR CAMPO ##########
+X,Y=np.meshgrid(np.linspace(-5,5,20), np.linspace(-5,5,12))     #(inicio plano,fin plano,cantidad flechas incluye extremos)   #MODIFICABLE#
+U = 1.0
+dydx = -Y-np.sin(X)                                             #EDO a graficar                                               #MODIFICABLE#
+N = np.sqrt(U ** 2 + dydx ** 2)
+U = U / N
+dydx = dydx / N
+plt.quiver(X, Y, U, dydx)
+plt.xlim([-5, 5])                                               #limites en eje x                                             #MODIFICABLE#
+plt.ylim([-5, 5])                                               #limites en eje y                                             #MODIFICABLE#
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid()
