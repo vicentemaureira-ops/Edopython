@@ -1,0 +1,5 @@
+########## MÉTODOS NUMÉRICOS ##########
+def f(x,y): return y                      #return -> la función
+n = int( (1-0)/0.2 )                        #n = (xn-x0)/h
+aprox = Euler(f, 0,1,1,n)                 #f,x0,xn,y0,n
+aprox2 = RK4(f, 0, 1, 1, n)               #f,x0,xn,y0,n
