@@ -1,3 +1,5 @@
+#Las soluciones se ven primero al ojo graficando la función
+
 #primero definimos la función
 def f(x): return 10*x**3-2*x**2+1-np.exp(2*x)
 
