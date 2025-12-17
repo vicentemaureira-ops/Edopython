@@ -1,0 +1,7 @@
+########## RESOLVER EC ##########
+x = sp.Symbol('x', real=True )
+y = sp.Function('y')
+
+ec = sp.log(y(x))-x**3+C                   #EC a resolver                                      #MODIFICABLE#
+res = sp.solve(ec,y(x))
+res
