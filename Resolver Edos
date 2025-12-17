@@ -1,0 +1,7 @@
+########### RESOLVER EDO #########
+x = sp.Symbol('x', real=True )
+y = sp.Function('y')
+
+dydx = 6 * x**2 - 3 * x**2 * (y(x))        #EDO a resolver                                      #MODIFICABLE#
+sp.Eq(y(x).diff(x), dydx)
+sp.dsolve(y(x).diff(x) - dydx)             #Resolver EDO. Para PVI agregar ,ics={y(1):2})       #MODIFICABLE#
