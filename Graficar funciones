@@ -1,0 +1,9 @@
+########## GRAFICAR FUNCIONES ##########
+x=np.linspace(-5,5, 200)                                       #(inicio grafo,fin grafo,puntos)                               #MODIFICABLE#
+########## CREAR FUNCIONES ##########
+y1 = (np.sin(x) + np.cos(x)) / 2                               #Creación función 1                                            #MODIFICABLE#
+########## GRAFICAR FUNCIONES
+plt.plot(x,y1,color="yellow",label= "$y1$")                    #Graficar curva de función 1                                   #MODIFICABLE#
+plt.grid()
+plt.legend()
+plt.show()
