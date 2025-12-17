@@ -1,0 +1,3 @@
+########## INTEGRAR ##########
+g = x**2                          #Función a integrar                #MODIFICABLE#
+sp.integrate(g,x)
